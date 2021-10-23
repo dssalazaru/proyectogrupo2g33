@@ -10,7 +10,6 @@ boton.addEventListener("click", (event)=>{
     let almacenamiento = document.getElementById("almacenamiento").value;
     let estados = document.getElementById("estados").value;
     let detalles = document.getElementById("detalles").textContent;
-    let importar  = document.getElementById("importar").imageContent;
 
     let equipo = {
         "tipo":tipo,
@@ -31,7 +30,6 @@ boton.addEventListener("click", (event)=>{
     document.getElementById("almacenamiento").value=("");
     document.getElementById("estados").value=("");
     document.getElementById("detalles").textContent=("");
-    document.getElementById("importar").imageContent=("");
     
     console.log(equipo)
  });
