@@ -1,1 +1,97 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Header */
+
+:root {
+  --primary-blue: #191970;
+  --secundary-blue: #0099E0;
+  --white-wool: #E8E8E8;
+  --gray-c: #CCCCCC;
+  --gray-a: #AAAAAA;
+  --gray-5: #555555;
+  --blue-black: #000030;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/* Header */
+
+.main-content {
+  background-color: var(--primary-blue);
+  height: 6rem;
+  display: flex;
+  position: sticky;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* brand */
+
+.main-content__brand a {
+  display: flex;
+  align-items: center;
+  min-width: 17.5rem;
+}
+
+.main-content__brand img {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 1rem;
+}
+
+.main-content__brand h1 {
+  color: var(--white-wool);
+  font-weight: bold;
+}
+
+/* Wrapper Search & Users */
+
+.main-content__wrapper-s-u {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+/* Usuario */
+
+.main-content__user {
+  margin-right: 1rem;
+  min-width: 8rem;
+  height: 3rem;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white-wool);
+  border-radius: 1rem;
+  cursor: default;
+}
+
+.main-content__user>i {
+  padding: .5rem;
+  margin-right: .5rem;
+  background-color: var(--secundary-blue);
+  border-radius: 100%;
+  color: var(--white-wool);
+}
+
+.main-content__user>.user a span {
+  color: var(--secundary-blue);
+  font-weight: bold;
+}
+
+.main-content__user #user {
+  color: var(--secundary-blue);
+  font-weight: bold;
+}
+
+/* /Header */
